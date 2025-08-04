@@ -1,0 +1,50 @@
+2025-08-03 17:44:52,957 INFO exited: celery_worker (exit status 1; not expected)
+2025-08-03 17:44:53,980 INFO spawned: 'celery_worker' with pid 21145
+2025-08-03 17:44:58,987 INFO success: celery_worker entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2025-08-03 17:45:03,781 INFO exited: celery_worker (exit status 1; not expected)
+2025-08-03 17:45:04,804 INFO spawned: 'celery_worker' with pid 21189
+2025-08-03 17:45:09,814 INFO success: celery_worker entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2025-08-03 17:45:15,577 INFO exited: celery_worker (exit status 1; not expected)
+2025-08-03 17:45:16,596 INFO spawned: 'celery_worker' with pid 21237
+2025-08-03 17:45:21,603 INFO success: celery_worker entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2025-08-03 17:45:27,372 INFO exited: celery_worker (exit status 1; not expected)
+2025-08-03 17:45:28,396 INFO spawned: 'celery_worker' with pid 21287
+2025-08-03 17:45:33,404 INFO success: celery_worker entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2025-08-03 17:45:38,537 INFO exited: celery_worker (exit status 1; not expected)
+2025-08-03 17:45:39,560 INFO spawned: 'celery_worker' with pid 21335
+2025-08-03 17:45:44,572 INFO success: celery_worker entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2025-08-03 17:45:48,828 INFO exited: celery_worker (exit status 1; not expected)
+2025-08-03 17:45:49,853 INFO spawned: 'celery_worker' with pid 21377
+2025-08-03 17:45:54,864 INFO success: celery_worker entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2025-08-03 17:45:59,901 INFO exited: celery_worker (exit status 1; not expected)
+2025-08-03 17:46:00,928 INFO spawned: 'celery_worker' with pid 21424
+2025-08-03 17:46:05,936 INFO success: celery_worker entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2025-08-03 17:46:11,669 INFO exited: celery_worker (exit status 1; not expected)
+2025-08-03 17:46:12,690 INFO spawned: 'celery_worker' with pid 21474
+2025-08-03 17:46:17,698 INFO success: celery_worker entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2025-08-03 17:46:23,090 INFO exited: celery_worker (exit status 1; not expected)
+2025-08-03 17:46:24,107 INFO spawned: 'celery_worker' with pid 21521
+2025-08-03 17:46:29,116 INFO success: celery_worker entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2025-08-03 17:46:35,883 INFO exited: celery_worker (exit status 1; not expected)
+2025-08-03 17:46:36,911 INFO spawned: 'celery_worker' with pid 21575
+2025-08-03 17:46:41,919 INFO success: celery_worker entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2025-08-03 17:46:46,598 INFO exited: celery_worker (exit status 1; not expected)
+2025-08-03 17:46:47,619 INFO spawnerr: unknown error making dispatchers for 'celery_worker': ENOENT
+2025-08-03 17:46:48,638 INFO spawnerr: unknown error making dispatchers for 'celery_worker': ENOENT
+2025-08-03 17:46:50,660 INFO spawnerr: unknown error making dispatchers for 'celery_worker': ENOENT
+2025-08-03 17:46:53,681 INFO spawnerr: unknown error making dispatchers for 'celery_worker': ENOENT
+2025-08-03 17:46:53,682 INFO gave up: celery_worker entered FATAL state, too many start retries too quickly
+2025-08-03 17:47:47,765 WARN received SIGTERM indicating exit request
+2025-08-03 17:49:00,261 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2025-08-03 17:49:00,265 INFO daemonizing the supervisord process
+2025-08-03 17:49:00,274 INFO supervisord started with pid 22165
+2025-08-03 17:49:01,293 INFO spawned: 'celery_worker' with pid 22170
+2025-08-03 17:49:06,305 INFO success: celery_worker entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2025-08-03 18:09:24,262 WARN received SIGTERM indicating exit request
+2025-08-03 18:09:24,280 INFO waiting for celery_worker to die
+2025-08-03 18:09:25,260 INFO stopped: celery_worker (exit status 0)
+2025-08-03 18:09:28,330 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2025-08-03 18:09:28,334 INFO daemonizing the supervisord process
+2025-08-03 18:09:28,341 INFO supervisord started with pid 27151
+2025-08-03 18:09:29,368 INFO spawned: 'celery_worker' with pid 27157
+2025-08-03 18:09:34,376 INFO success: celery_worker entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)

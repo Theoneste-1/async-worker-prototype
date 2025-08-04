@@ -1,0 +1,59 @@
+/mnt/b/python/acr-tasks/async-worker/venv/lib/python3.10/site-packages/celery/platforms.py:841: SecurityWarning: You're running the worker with superuser privileges: this is
+absolutely not recommended!
+
+Please specify a different user using the --uid option.
+
+User information: uid=0 euid=0 gid=0 egid=0
+
+  warnings.warn(SecurityWarning(ROOT_DISCOURAGED.format(
+[2025-08-03 17:49:15,733: INFO/MainProcess] Connected to amqp://guest:**@127.0.0.1:5672//
+[2025-08-03 17:49:15,739: INFO/MainProcess] mingle: searching for neighbors
+[2025-08-03 17:49:16,800: INFO/MainProcess] mingle: all alone
+[2025-08-03 17:49:16,864: INFO/MainProcess] celery@theoneste ready.
+[2025-08-03 17:50:57,545: INFO/MainProcess] Task tasks.test_task[3347ad00-d4dd-4ad5-91e0-5f9857cec1f5] received
+[2025-08-03 17:50:57,552: INFO/MainProcess] Received test message: {'agent_id': 'host-789', 'snapshot_data': {'running_processes': ['nginx', 'redis', 'python'], 'timestamp': 1678901234}}
+[2025-08-03 17:50:57,554: INFO/MainProcess] Task tasks.test_task[3347ad00-d4dd-4ad5-91e0-5f9857cec1f5] succeeded in 0.002894537000429409s: None
+/mnt/b/python/acr-tasks/async-worker/venv/lib/python3.10/site-packages/celery/platforms.py:841: SecurityWarning: You're running the worker with superuser privileges: this is
+absolutely not recommended!
+
+Please specify a different user using the --uid option.
+
+User information: uid=0 euid=0 gid=0 egid=0
+
+  warnings.warn(SecurityWarning(ROOT_DISCOURAGED.format(
+[2025-08-03 18:09:39,311: INFO/MainProcess] Connected to amqp://guest:**@127.0.0.1:5672//
+[2025-08-03 18:09:39,321: INFO/MainProcess] mingle: searching for neighbors
+[2025-08-03 18:09:40,372: INFO/MainProcess] mingle: all alone
+[2025-08-03 18:09:40,442: INFO/MainProcess] celery@theoneste ready.
+[2025-08-03 18:09:40,443: INFO/MainProcess] Task tasks.process_snapshot[71e2919d-9548-4cc4-b15f-36710fcf2655] received
+[2025-08-03 18:09:40,444: INFO/MainProcess] Processed snapshot for agent_id: host-789, Running processes: 3
+[2025-08-03 18:09:40,444: INFO/MainProcess] Total tasks processed for host-789: 1
+[2025-08-03 18:09:40,444: INFO/MainProcess] Task tasks.process_snapshot[71e2919d-9548-4cc4-b15f-36710fcf2655] succeeded in 0.0010339629998270539s: {'status': 'success', 'agent_id': 'host-789', 'process_count': 3}
+[2025-08-03 18:09:40,445: INFO/MainProcess] Task tasks.process_snapshot[c0517f5d-3f53-4b89-b868-59781dda5ac8] received
+[2025-08-03 18:09:40,445: INFO/MainProcess] Processed snapshot for agent_id: host-123, Running processes: 2
+[2025-08-03 18:09:40,445: INFO/MainProcess] Total tasks processed for host-123: 1
+[2025-08-03 18:09:40,445: INFO/MainProcess] Task tasks.process_snapshot[c0517f5d-3f53-4b89-b868-59781dda5ac8] succeeded in 0.00069816700033698s: {'status': 'success', 'agent_id': 'host-123', 'process_count': 2}
+[2025-08-03 18:09:40,446: INFO/MainProcess] Task tasks.process_snapshot[e52a660a-9fcf-4e1f-8af9-ca0ef904b0d3] received
+[2025-08-03 18:09:40,446: ERROR/MainProcess] Validation error for payload {'agent_id': 'host-456', 'snapshot_data': 'invalid'}: snapshot_data must be a dictionary
+[2025-08-03 18:09:40,513: INFO/MainProcess] Task tasks.process_snapshot[e52a660a-9fcf-4e1f-8af9-ca0ef904b0d3] retry: Retry in 1s: ValueError('snapshot_data must be a dictionary')
+[2025-08-03 18:09:40,514: INFO/MainProcess] Task tasks.process_snapshot[e52a660a-9fcf-4e1f-8af9-ca0ef904b0d3] received
+[2025-08-03 18:09:41,453: ERROR/MainProcess] Validation error for payload {'agent_id': 'host-456', 'snapshot_data': 'invalid'}: snapshot_data must be a dictionary
+[2025-08-03 18:09:41,477: INFO/MainProcess] Task tasks.process_snapshot[e52a660a-9fcf-4e1f-8af9-ca0ef904b0d3] retry: Retry in 2s: ValueError('snapshot_data must be a dictionary')
+[2025-08-03 18:09:41,478: INFO/MainProcess] Task tasks.process_snapshot[e52a660a-9fcf-4e1f-8af9-ca0ef904b0d3] received
+[2025-08-03 18:09:43,457: ERROR/MainProcess] Validation error for payload {'agent_id': 'host-456', 'snapshot_data': 'invalid'}: snapshot_data must be a dictionary
+[2025-08-03 18:09:43,485: INFO/MainProcess] Task tasks.process_snapshot[e52a660a-9fcf-4e1f-8af9-ca0ef904b0d3] retry: Retry in 4s: ValueError('snapshot_data must be a dictionary')
+[2025-08-03 18:09:43,486: INFO/MainProcess] Task tasks.process_snapshot[e52a660a-9fcf-4e1f-8af9-ca0ef904b0d3] received
+[2025-08-03 18:09:47,461: ERROR/MainProcess] Validation error for payload {'agent_id': 'host-456', 'snapshot_data': 'invalid'}: snapshot_data must be a dictionary
+[2025-08-03 18:09:47,489: ERROR/MainProcess] Task tasks.process_snapshot[e52a660a-9fcf-4e1f-8af9-ca0ef904b0d3] raised unexpected: ValueError('snapshot_data must be a dictionary')
+Traceback (most recent call last):
+  File "/mnt/b/python/acr-tasks/async-worker/venv/lib/python3.10/site-packages/celery/app/trace.py", line 453, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/mnt/b/python/acr-tasks/async-worker/venv/lib/python3.10/site-packages/celery/app/trace.py", line 736, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/mnt/b/python/acr-tasks/async-worker/tasks.py", line 79, in process_snapshot
+    raise self.retry(exc=e, countdown=2 ** self.request.retries)
+  File "/mnt/b/python/acr-tasks/async-worker/venv/lib/python3.10/site-packages/celery/app/task.py", line 743, in retry
+    raise_with_context(exc)
+  File "/mnt/b/python/acr-tasks/async-worker/tasks.py", line 60, in process_snapshot
+    raise ValueError("snapshot_data must be a dictionary")
+ValueError: snapshot_data must be a dictionary

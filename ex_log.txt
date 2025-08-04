@@ -1,0 +1,16 @@
+2025-08-03 17:10:45,408 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2025-08-03 17:10:45,416 INFO daemonizing the supervisord process
+2025-08-03 17:10:45,423 INFO supervisord started with pid 12164
+2025-08-03 17:10:46,444 INFO spawnerr: unknown error making dispatchers for 'celery_worker': ENOENT
+2025-08-03 17:10:47,457 INFO spawnerr: unknown error making dispatchers for 'celery_worker': ENOENT
+2025-08-03 17:10:49,477 INFO spawnerr: unknown error making dispatchers for 'celery_worker': ENOENT
+2025-08-03 17:10:52,496 INFO spawnerr: unknown error making dispatchers for 'celery_worker': ENOENT
+2025-08-03 17:10:52,499 INFO gave up: celery_worker entered FATAL state, too many start retries too quickly
+2025-08-03 17:14:25,295 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2025-08-03 17:14:25,306 INFO daemonizing the supervisord process
+2025-08-03 17:14:25,316 INFO supervisord started with pid 13035
+2025-08-03 17:14:26,334 INFO spawned: 'celery_worker' with pid 13040
+2025-08-03 17:14:31,343 INFO success: celery_worker entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2025-08-03 17:14:49,546 INFO exited: celery_worker (exit status 2; not expected)
+2025-08-03 17:14:50,624 INFO spawned: 'celery_worker' with pid 13135
+2025-08-03 17:14:55,632 INFO success: celery_worker entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)

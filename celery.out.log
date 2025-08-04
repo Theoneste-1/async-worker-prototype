@@ -1,0 +1,40 @@
+ 
+ -------------- celery@theoneste v5.5.3 (immunity)
+--- ***** ----- 
+-- ******* ---- Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.35 2025-08-03 17:49:15
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         tasks:0x7fa0ea928af0
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 12 (solo)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> snapshot_queue   exchange=snapshots(direct) key=snapshot.process
+                
+
+[tasks]
+  . tasks.test_task
+
+
+worker: Warm shutdown (MainProcess)
+ 
+ -------------- celery@theoneste v5.5.3 (immunity)
+--- ***** ----- 
+-- ******* ---- Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.35 2025-08-03 18:09:39
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         tasks:0x7f5ea4f24af0
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     rpc://
+- *** --- * --- .> concurrency: 12 (solo)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> snapshot_queue   exchange=snapshots(direct) key=snapshot.process
+                
+
+[tasks]
+  . tasks.process_snapshot
+

@@ -46,6 +46,11 @@ cd async-worker-prototype
 
 ```
 
+## installing Supervisor 
+```bash 
+sudo apt install supervisor
+```
+
 
 ### Python Environment
 

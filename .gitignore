@@ -1,2 +1,4 @@
 # Ignoring the virtual environement configs folder
 venv
+config.bat
+node_modules
